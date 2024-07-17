@@ -1,0 +1,59 @@
+.app__bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.app__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.app__wrapper_info {
+    flex: 1;
+}
+
+.app__wrapper_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.headtext__cormorant {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--color-golden);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.p__opensans {
+    margin-bottom: 1rem;
+}
+
+.p__cormorant {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--color-grey);
+}
+
+.custom__button {
+    background-color: var(--color-golden);
+    color: var(--color-white);
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .app__wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .app__wrapper_img img {
+        margin-top: 2rem;
+    }
+}
